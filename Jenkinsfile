@@ -1,6 +1,6 @@
 node('master'){
     # Especificar la ruta adecuada en cada caso
-    def mavenFolfer = "C:/Users/{{user}}/.m2";
+    def mavenFolfer = "/usr/.m2";
     stage('checkout') {
         # Es necesario configurar la credenciales previamente en el jenkins
         git branch: 'master', credentialsId: 'GitLab', url: 'https://gitlab.sngular.com/sngulartech/devops_jenkins_and_docker'
